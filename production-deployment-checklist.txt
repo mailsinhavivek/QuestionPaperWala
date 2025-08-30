@@ -1,0 +1,39 @@
+PRACTICE PAPERS - PRODUCTION DEPLOYMENT CHECKLIST
+===================================================
+
+PRE-DEPLOYMENT REQUIREMENTS:
+✅ Database dropped and recreated fresh
+✅ All tables recreated with latest schema
+✅ Application builds successfully
+✅ API endpoints responding correctly
+✅ Production CORS configuration fixed
+✅ Session management configured for production
+
+REQUIRED ENVIRONMENT VARIABLES:
+□ DATABASE_URL (auto-configured in Replit)
+□ OPENAI_API_KEY (required for question generation)
+□ RAZORPAY_KEY_ID (required for payments)
+□ RAZORPAY_KEY_SECRET (required for payments)
+□ CASHFREE_APP_ID (required for payments)
+□ CASHFREE_SECRET_KEY (required for payments)
+□ SENDGRID_API_KEY (required for email notifications)
+□ SESSION_SECRET (optional - auto-generated)
+
+DEPLOYMENT COMMANDS:
+1. npm install
+2. npm run db:push --force
+3. npm run build
+4. npm start
+
+WEBHOOK CONFIGURATION:
+□ Razorpay webhook: https://your-domain.replit.app/api/razorpay-webhook
+□ Cashfree webhook: https://your-domain.replit.app/api/cashfree-webhook
+
+POST-DEPLOYMENT VERIFICATION:
+□ Test API endpoints (/api/countries, /api/curricula)
+□ Test user registration and login
+□ Test payment gateway integration
+□ Verify email notifications work
+□ Check application logs for errors
+
+PRODUCTION DOMAIN: https://questionpaper.replit.app
