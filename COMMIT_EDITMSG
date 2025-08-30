@@ -1,0 +1,8 @@
+Adjust download limits to accurately reflect subscription tiers and entitlements
+
+Implement granular download validation logic in the frontend and backend to enforce subscription-based download limits (e.g., 2 per month for free users, 1 per month for premium subscribers) per subject, while ensuring special access users and yearly subscribers have unlimited downloads. Includes toast notifications for limit breaches.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: a30cafb4-99fd-4c7c-9aaf-d7f2b48189c9
+Replit-Commit-Checkpoint-Type: full_checkpoint
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/cf3c1938-c06b-45f7-95f6-51eb7b74ba3e/a30cafb4-99fd-4c7c-9aaf-d7f2b48189c9/9uBVdpU

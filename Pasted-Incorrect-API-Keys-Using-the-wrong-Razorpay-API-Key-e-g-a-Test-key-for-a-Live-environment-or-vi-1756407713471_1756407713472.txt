@@ -1,0 +1,21 @@
+Incorrect API Keys:
+Using the wrong Razorpay API Key (e.g., a Test key for a Live environment or vice-versa, or a key from a different project) is a frequent cause of such errors. Ensure the correct Key ID and Key Secret for the environment (Test or Live) are used in your integration.
+Invalid Order Creation:
+If you are creating orders on your server-side using Razorpay's Orders API, ensure that the order creation process is successful and the order details are correctly passed to the Razorpay checkout. Errors in parameters like amount, currency, or receipt can lead to issues.
+Client-Side Integration Issues:
+Incorrect options object: The options object passed to the Razorpay checkout script must be correctly formatted and include all necessary parameters (key, amount, currency, name, description, etc.).
+Missing or incorrect handler function: The handler function, which is called after a successful payment, must be properly defined to handle the payment success or failure callback.
+JavaScript errors: Any JavaScript errors in your client-side code related to the Razorpay integration can prevent the checkout from functioning correctly.
+Network or Server Issues:
+Connectivity problems: Intermittent network issues on the user's device or between your server and Razorpay's servers can disrupt the payment flow.
+Bank/Payment Method Specific Issues: The selected payment method or the user's bank might be experiencing technical difficulties or have specific restrictions (e.g., international transaction restrictions).
+Insufficient Funds or Invalid Details:
+While the error appears before the bank's authentication, if the system quickly detects issues like insufficient funds or invalid card details based on pre-validation, it might trigger an immediate error.
+Troubleshooting Steps:
+Verify API Keys:
+Double-check that the correct Razorpay Key ID and Key Secret are being used for the specific environment (Test or Live) you are operating in.
+Review Order Creation (Server-Side):
+If you are creating orders on your server, inspect your server logs for any errors during the order creation process.
+Inspect Client-Side Code:
+Use your browser's developer tools to check the console for any JavaScript errors related to Razorpay.
+Verify the structure and content of the options object passed to the Razorpay checkout.

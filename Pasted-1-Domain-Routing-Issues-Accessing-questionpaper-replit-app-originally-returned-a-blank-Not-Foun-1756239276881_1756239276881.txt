@@ -1,0 +1,63 @@
+1. Domain & Routing Issues
+
+Accessing questionpaper.replit.app originally returned a blank “Not Found” page, while the content is available at questionpaper‑ai.replit.app. Broken or duplicate domains confuse users and hurt search rankings. Use a single canonical domain and set up 301 redirects so visitors and search engines are always sent to the correct site.
+
+When scrolling, I unintentionally landed on another “Not Found” page, suggesting a hidden route is bound to scroll events. Review the front‑end routing logic to ensure the scroll wheel doesn’t trigger navigation events.
+
+2. Navigation & Calls to Action
+
+The hero section prominently features the product name and a gradient background, but the only visible navigation links are “Sign In” and “Signup”
+questionpaper.replit.app
+. Potential users don’t know how to generate a paper or use the problem‑solver unless they scroll and read the fine‑print “Quick Access” links. Adding a persistent top navigation bar with links to “Generate Paper”, “Problem Solver”, “Pricing” and “How It Works” would improve orientation.
+
+Multiple CTAs appear on one page—“Try FREE Now”, “Start Studying Now” and “Start Creating Now”
+questionpaper.replit.app
+—which can be confusing. Consolidate these actions into a single primary CTA (e.g., “Generate Your First Paper Free”) and place secondary actions elsewhere.
+
+The pricing section shows a “Coming Soon” subscription card alongside the free plan
+questionpaper.replit.app
+. If a paid plan is not yet available, consider collecting emails for a waitlist and clearly stating the launch timeline rather than presenting a full pricing table.
+
+3. Content & Messaging
+
+The SEO meta description emphasises support for CBSE, ICSE, Maharashtra Board and 33+ curricula with instant answers
+questionpaper.replit.app
+. However, the landing page copy doesn’t highlight these differentiators until far down the page. Bring the key value propositions (multi‑board support, instant solutions, 10‑language availability
+questionpaper.replit.app
+) higher in the hero section to capture attention.
+
+Sections for students, teachers and parents clearly outline benefits
+questionpaper.replit.app
+, yet including a short demo or a sample question paper would let users experience the product before signing up.
+
+The testimonial section contains a single quote. Rotating testimonials from multiple parents and teachers along with user ratings (e.g., the 4.9‑star rating mentioned in structured data
+questionpaper.replit.app
+) can build more trust.
+
+4. Accessibility & UI Improvements
+
+Some text (e.g., light blue text on blue backgrounds) has low contrast
+questionpaper.replit.app
+. Use WCAG‑compliant color contrasts and provide ample whitespace to improve readability.
+
+Ensure all images have descriptive alt attributes and form fields have labels to aid screen‑reader users; the view source didn’t show any alt tags because images are injected via scripts.
+
+Mobile responsiveness is good, but the large images and gradients slow down initial loading. Compress images, lazy‑load below‑the‑fold assets, and minify JavaScript to improve performance.
+
+5. User On‑boarding & Authentication
+
+Clicking “Start Creating Now” leads directly to a sign‑in form requiring email or phone and password
+questionpaper.replit.app
+. For first‑time users, offer social login options (Google, Apple) and a clearer sign‑up flow.
+
+Clarify password requirements and use real‑time validation to improve the sign‑in experience. A “Forgot Password” link is present
+questionpaper.replit.app
+, which is good, but adding a help tooltip or FAQ link could further reduce support questions.
+
+6. SEO & Structured Data
+
+The page’s metadata includes a canonical link to questionpaper‑ai.replit.app and rich structured data specifying features, ratings and curricula
+questionpaper.replit.app
+. Ensure that these are kept updated and that the canonical URL matches the domain users see. Adding open‑graph images and alt text to images will enhance sharing on social media.
+
+By addressing broken links, simplifying navigation and CTAs, emphasizing key differentiators earlier, improving accessibility and performance, and refining the sign‑up flow, the site will provide a smoother experience for parents, teachers and students while better conveying its value proposition.
